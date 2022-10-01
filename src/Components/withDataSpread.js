@@ -2,7 +2,7 @@ import React,{Component} from "react";
 import data from "../data.json";
 
 
-const CrewDestTechComponent = OriginalComponent => {
+const CrewDestTechComponent = (OriginalComponent, OtherComponent) => {
     class NewComponent extends React.Component{
         constructor(){
             super();
@@ -23,7 +23,7 @@ const CrewDestTechComponent = OriginalComponent => {
 
         
         render(){
-            return <OriginalComponent data={this.state.data}/>
+            return (<OriginalComponent data={this.state.data}/>, <OtherComponent destinations={this.state.data.destinations}/>)
         }
     }
     return NewComponent
