@@ -1,5 +1,5 @@
 import CrewDestTechComponent from "./withDataSpread"
-import { CrewMember, MsgBuilder } from "./helper"
+// import { CrewMember, MsgBuilder } from "./helper"
 
 
 const Crew = (props)  => {
@@ -8,9 +8,9 @@ const Crew = (props)  => {
    
 
     return <div>
-        {props.data.crew.map((member, index) =>{
-            return (<CrewMember member={member} key={index}/>, <MsgBuilder bio={member.bio} key={index}/>)
-        })}
+        {/* {props.data.crew.map((member, index) =>{
+            return (<CrewMember member={member} key={index}/>)
+        })} */}
     </div>
 }
 

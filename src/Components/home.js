@@ -1,8 +1,13 @@
 import CrewDestTechComponent from "./withDataSpread";
 
+import bgHome from "../assets/home/background-home-desktop.jpg";
+
 
 const Home = (props) => {
-    return <div>{props.crew}</div>
+    console.log(props.data)
+    return <div> 
+        <img src={bgHome} alt="Sorry no image"/>
+    </div>
 }
 
 export default CrewDestTechComponent(Home);
