@@ -5,8 +5,8 @@ const Tour = (props) => {
   const { png, webp } = images;
   return (
     <div>
-      <title>travel with booking.com</title>
-      <img src={png} alt="" />
+      <h3>travel with booking.com</h3>
+      {/* <img src={webp} alt="" /> */}
       <h1>{name}</h1>
       <p>{description}</p>
       <span></span>

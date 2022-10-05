@@ -1,6 +1,11 @@
-.home-page {
+.homePage {
   background: url("../assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: white;
+  z-index: -1;
 }

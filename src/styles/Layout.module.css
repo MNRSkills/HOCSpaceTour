@@ -1,0 +1,15 @@
+.layoutComponent {
+  position: relative;
+  height: 100vh;
+  /* width: 100%; */
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  position: absolute;
+  right: 0;
+  height: 140px;
+  width: 60%;
+  background: gray;
+}
