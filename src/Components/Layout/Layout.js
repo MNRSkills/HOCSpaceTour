@@ -10,8 +10,7 @@ const Layout = (props) => {
       <div className={styles.nav}>
         <Nav />
       </div>
-
-      {props.children}
+      <div className={styles.children}>{props.children}</div>
     </div>
   );
 };

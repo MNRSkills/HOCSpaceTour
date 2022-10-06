@@ -2,14 +2,20 @@
   position: relative;
   height: 100vh;
   /* width: 100%; */
-  padding: 0;
   margin: 0;
 }
 
 .nav {
   position: absolute;
   right: 0;
-  height: 140px;
-  width: 60%;
+  height: 20%;
+  width: 100%;
   background: gray;
+}
+
+.children {
+  position: relative;
+  height: 100%;
+  /* width: 100%; */
+  margin: auto;
 }

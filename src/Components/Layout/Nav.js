@@ -5,15 +5,16 @@ import styles from "../../styles/NavBar.module.css";
 const Nav = (props) => {
   return (
     <div className={styles.navBar}>
-      <Link to="/" className={styles.link}>
-        Home
-      </Link>
-      <Link to="/destinations" className={styles.link}>
-        Destinations
-      </Link>
-      <Link to="/crew" className={styles.link}>
-        Crew
-      </Link>
+      <div className={styles.link}>
+        <Link to="/"><span>00</span>Home</Link>
+      </div>
+
+      <div className={styles.link}>
+        <Link to="/destinations"><span>01</span>Destinations</Link>
+      </div>
+      <div className={styles.link}>
+        <Link to="/crew"><span>02</span>Crew</Link>
+      </div>
     </div>
   );
 };
