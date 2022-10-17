@@ -1,21 +1,19 @@
 .layoutComponent {
-  position: relative;
-  height: 100vh;
-  /* width: 100%; */
-  margin: 0;
 }
 
 .nav {
-  position: absolute;
-  right: 0;
-  height: 20%;
-  width: 100%;
-  background: gray;
+  height: 200px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.nav img {
+  height: 200px;
+  width: 200px;
 }
 
 .children {
-  position: relative;
   height: 100%;
-  /* width: 100%; */
   margin: auto;
 }

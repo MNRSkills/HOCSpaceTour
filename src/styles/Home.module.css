@@ -3,14 +3,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: absolute;
-  top: 0;
+  color: white;
+  /* position: relative; */
+  /* top: 0;
   bottom: 0;
   color: white;
-  z-index: -1;
-  padding: 50% 30% 30% 30%;
+  z-index: -1; */
+  /* padding: 50% 30% 30% 30%; */
 }
 
 .container {
+  /* position: relative;
   display: grid;
+  grid-template-rows: [nav-s] 1fr [body] 1fr;
+  grid-template-columns: 1fr 1fr; */
+  /* padding: 20px; */
 }
