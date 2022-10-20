@@ -1,0 +1,7 @@
+.card {
+  border: 3px solid yellow;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: [left-side]1fr [middle-lane] 1fr [right-side];
+  grid-template-rows: 1fr 1fr 1fr;
+}

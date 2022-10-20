@@ -1,16 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
-import CrewDestTechComponent from "./withDataSpread";
-import Tour from "./tour";
-import pic from "../assets/destination/image-europa.png";
-import "../styles/destinations.css";
+import CrewDestTechComponent from "../withDataSpread";
+import Tour from "../tour";
+import styles from "../../styles/Destinations.module.css";
 
+
+// THE START OF A COMPONENT
 const Destinations = (props) => {
-  // console.log("This is proops dest", props.destinations);
+  console.log("This is proops dest", props);
 
   return (
     // THINK ABOUT MOVING THIS LIST FOR REUSABILITY WITH CREW AND TECH PAGES
-    <div className="desination-page">
-      <ul className="unordered-list">
+    <div className={styles.destinationsPage}>
+      <ul className={styles.menuBoard}>
         <li>
           <input
             type="button"
@@ -43,12 +44,17 @@ const Destinations = (props) => {
           />
         </li>
       </ul>
-      <div>
-        {/* {data.destinations.map((tour, index) => {
+      <div className={styles.destinationComp}>
+        {props.data.destinations.map((tour, index) => {
           return (
-            <Tour tour={tour} key={index} className="destination-layout" />
+            <Tour
+              tour={tour}
+              key={index}
+              className="destination-layout"
+              destName={props.destName}
+            />
           );
-        })} */}
+        })}
       </div>
     </div>
   );

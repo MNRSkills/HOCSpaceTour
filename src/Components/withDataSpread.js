@@ -7,19 +7,12 @@ const CrewDestTechComponent = (OriginalComponent) => {
       super();
       this.state = {
         data: data,
-        destinations: data.destinations,
+        destinations: [],
         destName: "Moon",
         crew: data.crew,
       };
-      console.log(this.destName);
 
       this.handleChange = this.handleChange.bind(this);
-    }
-
-    locationsTour() {
-      this.state.destinations.map((place, index) => {
-        console.log("DESTINATIONS", place);
-      });
     }
 
     crewFolk() {
@@ -38,18 +31,18 @@ const CrewDestTechComponent = (OriginalComponent) => {
     }
 
     componentDidMount() {
-      //   this.locationsTour();
       //   this.crewFolk();
     }
 
     render() {
       return (
-        <OriginalComponent
-          //   data={this.state.data}
-          // destinations={this.locationsTour}
-          handleChange={this.handleChange}
-          // destName={this.destName}
-        />
+        <div>
+          <OriginalComponent
+            data={this.state.data}
+            handleChange={this.handleChange}
+            destName={this.state.destName}
+          />
+        </div>
       );
     }
   }

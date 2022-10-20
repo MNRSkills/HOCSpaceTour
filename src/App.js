@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
-import Home from "./Components/home";
-import Crew from "./Components/crew";
-import Destinations from "./Components/destinations";
+import Home from "./Components/pages/home";
+import Crew from "./Components/pages/crew";
+import Destinations from "./Components/pages/destinations";
 
 function App() {
   return (

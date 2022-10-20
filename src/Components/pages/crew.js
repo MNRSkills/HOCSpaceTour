@@ -1,4 +1,4 @@
-import CrewDestTechComponent from "./withDataSpread"
+import CrewDestTechComponent from "../withDataSpread";
 // import { CrewMember, MsgBuilder } from "./helper"
 
 
@@ -8,6 +8,7 @@ const Crew = (props)  => {
    
 
     return <div>
+        Hi MOM
         {/* {props.data.crew.map((member, index) =>{
             return (<CrewMember member={member} key={index}/>)
         })} */}

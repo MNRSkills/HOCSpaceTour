@@ -1,0 +1,32 @@
+/* THIS PAGE NEEDS TO HAVE ZINDEX TO SIT BEHIND THE NAV AND COVER THE HOLE PAGE */
+
+.destinationsPage {
+  background: url("../assets/destination/background-destination-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.menuBoard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.menuBoard li {
+  list-style: none;
+}
+
+.destinationComp {
+  border: 2px solid white;
+}
+
+.destinationComp h1 {
+  color: white;
+}
+
+

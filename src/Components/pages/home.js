@@ -1,12 +1,10 @@
 import React from "react";
 
-import CrewDestTechComponent from "./withDataSpread";
-import bgHome from "../assets/home/background-home-desktop.jpg";
-// import "../styles/home.css";
-import styles from "../styles/Home.module.css";
+import CrewDestTechComponent from "../withDataSpread";
+import bgHome from "../../assets/home/background-home-desktop.jpg";
+import styles from "../../styles/Home.module.css";
 
 const Home = (props) => {
-  console.log(props.data);
   return (
     <div className={styles.homePage}>
       <div className={styles.container}>

@@ -5,14 +5,14 @@ import styles from "../../styles/Layout.module.css";
 
 const Layout = (props) => {
   return (
-    <div className={styles.layoutComponent}>
-      <div className={styles.nav}>
+    <>
+      <header className={styles.nav}>
         <span></span>
         <img src="../../assets/shared/logo.svg" alt="" />
         <Nav />
-      </div>
+      </header>
       <div className={styles.children}>{props.children}</div>
-    </div>
+    </>
   );
 };
 

@@ -4,26 +4,28 @@ import styles from "../../styles/NavBar.module.css";
 
 const Nav = (props) => {
   return (
-    <div className={styles.navBar}>
+    <nav className={styles.navBar}>
       <div className={styles.linkBox}>
-        <h4 className={styles.numbers}>00</h4>
         <Link to="/" className={styles.link}>
-          Home
+          00 Home
         </Link>
       </div>
       <div className={styles.linkBox}>
-        <h4>01</h4>
         <Link to="/destinations" className={styles.link}>
-          Destinations
+          01 Destinations
         </Link>
       </div>
       <div className={styles.linkBox}>
-        <h4>02</h4>
         <Link to="/crew" className={styles.link}>
-          Crew
+          02 Crew
         </Link>
       </div>
-    </div>
+      <div className={styles.linkBox}>
+        <Link to="/technology" className={styles.link}>
+          03 Technology
+        </Link>
+      </div>
+    </nav>
   );
 };
 

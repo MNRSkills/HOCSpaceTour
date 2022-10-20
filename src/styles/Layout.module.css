@@ -1,16 +1,21 @@
 .layoutComponent {
 }
 
+
 .nav {
   height: 200px;
-  background-color: black;
-  display: flex;
-  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .nav img {
   height: 200px;
-  width: 200px;
+  min-width: 200px;
+  /* padding-left: 15%; */
+}
+
+span{
+  border-bottom: 2px solid white;
 }
 
 .children {
