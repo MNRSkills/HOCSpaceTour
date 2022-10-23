@@ -1,24 +1,26 @@
 .layoutComponent {
 }
 
-
 .nav {
-  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   position: relative;
   z-index: 1;
+  padding-top: 120px;
 }
 
 .nav img {
-  height: 200px;
-  min-width: 200px;
-  /* padding-left: 15%; */
+  margin-left: 10%;
+  width: 70px;
 }
 
-span{
+span {
   border-bottom: 2px solid white;
 }
 
 .children {
-  height: 100%;
-  margin: auto;
+  /* height: 100%; */
+  /* margin: auto; */
 }

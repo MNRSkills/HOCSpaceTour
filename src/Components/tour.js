@@ -8,7 +8,7 @@ const Tour = (props) => {
     return (
       <>
         <h3>travel with booking.com</h3>
-        <img src={webp} alt="" />
+        <img src={png} alt="" />
         <h1>{name}</h1>
         <p>{description}</p>
         <span></span>

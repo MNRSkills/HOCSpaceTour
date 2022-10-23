@@ -8,6 +8,27 @@
   position: absolute;
   top: 0;
   bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  z-index: -1;
+
+  height: 100%;
+  display: grid;
+  grid-template-rows: [header-start] minmax(33px, 300px) [header-ends present-start] 1fr [present-end];
+  grid-template-columns: minmax(33px, 150px) [left-side] 1fr [right-side] minmax(
+      33px,
+      150px
+    );
+}
+
+.container {
+  grid-row: present-start/present-end;
+  grid-column: left-side/right-side;
+}
+
+.listWrapper{
+  padding: 20px;
 }
 
 .menuBoard {
@@ -19,6 +40,22 @@
 
 .menuBoard li {
   list-style: none;
+  height: 100%;
+}
+
+.menuBoard input {
+  background: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  cursor:pointer;
+}
+
+.menuBoard li:hover{
+  border-bottom: 2px solid white;
+  animation: none;
 }
 
 .destinationComp {
@@ -28,5 +65,3 @@
 .destinationComp h1 {
   color: white;
 }
-
-
