@@ -1,18 +1,28 @@
-
+import styles from "../styles/Crew.module.css";
 
 export const CrewMember = (props) => {
-    console.log(props);
-    return <div>This IS PRopR</div>
-}
+  const { name, role, bio, images } = props.crewMember;
 
+  if (props.crewName == name) {
+    return (
+      <>
+        <header>
+          <span aria-hidden="true">02</span>
+          <h4> Meet your crew</h4>
+        </header>
+        <h2 className={styles.role}>{role}</h2>
+        <h1 className={styles.name}>{name}</h1>
+        <p className={styles.bio}>{bio}</p>
+        <img src={images.png} alt="" />
+      </>
+    );
+  }
+};
 
 export const MsgBuilder = (props) => {
-    console.log(props)
-    return <div>
-        This is builder for msg
-    </div>
-}
-
+  console.log(props);
+  return <div>This is builder for msg</div>;
+};
 
 // export const sliderComp = (props) => {
 //     return (

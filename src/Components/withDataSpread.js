@@ -10,6 +10,7 @@ const CrewDestTechComponent = (OriginalComponent) => {
         destinations: [],
         destName: "Moon",
         crew: data.crew,
+        crewName: "Douglas Hurley",
       };
 
       this.handleChange = this.handleChange.bind(this);
@@ -27,6 +28,7 @@ const CrewDestTechComponent = (OriginalComponent) => {
       // console.log(e);
       this.setState({
         destName: e,
+        crewName: e
       });
     }
 
@@ -41,6 +43,8 @@ const CrewDestTechComponent = (OriginalComponent) => {
             data={this.state.data}
             handleChange={this.handleChange}
             destName={this.state.destName}
+            crew={this.state.crew}
+            crewName={this.state.crewName}
           />
         </div>
       );

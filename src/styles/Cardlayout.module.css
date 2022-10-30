@@ -1,7 +1,18 @@
-.card {
-  border: 3px solid yellow;
-  height: 100vh;
-  display: grid;
+header  {
+
+  grid-area: header;
+}
+
+.name {
+  grid-area: name;
+}
+
+.stat {
+  grid-area: stat;
+}
+  /* border: 3px solid yellow; */
+  /* height: 100vh; */
+  /* display: grid;
   grid-template-columns: [left-side]1fr [middle-lane] 1fr [right-side];
   grid-template-rows: 1fr 1fr 1fr;
-}
+} */

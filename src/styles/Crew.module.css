@@ -1,0 +1,43 @@
+.crew {
+  background: url("../assets/crew/background-crew-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  z-index: -1;
+
+  display: grid;
+  grid-template-columns: 1.7em [bio] 1fr [middle-line] 1fr [photo] 1.7em;
+  grid-template-rows: [header-start] 17em [header-end bio-start] 25em [ bio-end button-start] 1.7em [button-end];
+  /* grid-template-rows: [header-start] minmax(33px, 300px) [header-ends present-start] 1fr [present-end];
+  grid-template-columns: minmax(33px, 150px) [left-side] 1fr [right-side] minmax(
+      33px,
+      150px
+    ); */
+}
+
+.crewDp {
+  grid-row: header-end;
+  grid-column: bio/middle-line;
+}
+
+/* LIST STYLES FOR THE CLICK FUNCTIONS */
+
+.listWrapper {
+  grid-column: bio/middle-line;
+  grid-row: button-start/button-end;
+  display: flex;
+  justify-content: center;
+}
+
+
+.listWrapper li {
+    list-style: none;
+    height: 100%;
+}

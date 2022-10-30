@@ -22,13 +22,10 @@
     );
 }
 
-.container {
+.listWrapper {
+  padding: 20px;
   grid-row: present-start/present-end;
   grid-column: left-side/right-side;
-}
-
-.listWrapper{
-  padding: 20px;
 }
 
 .menuBoard {
@@ -50,18 +47,23 @@
   border: none;
   padding: 20px;
   font-size: 20px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.menuBoard li:hover{
+.menuBoard li:hover {
   border-bottom: 2px solid white;
   animation: none;
 }
 
-.destinationComp {
-  border: 2px solid white;
-}
 
-.destinationComp h1 {
+
+.destinationComp {
   color: white;
+  display: grid;
+  grid-template-columns: 1.5em 1fr 1.5em;
+  grid-template-areas:
+    "header header header header"
+    ". . . name"
+    " . . article article"
+    ". . stat stat";
 }

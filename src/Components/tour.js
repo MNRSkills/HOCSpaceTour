@@ -2,20 +2,23 @@ import React from "react";
 import styles from "../styles/Cardlayout.module.css";
 
 const Tour = (props) => {
+  console.log(props);
   const { name, images, description, distance, travel } = props.tour;
   const { png, webp } = images;
   if (props.destName == name) {
     return (
       <>
-        <h3>travel with booking.com</h3>
+        <header>travel with booking.com</header>
         <img src={png} alt="" />
-        <h1>{name}</h1>
-        <p>{description}</p>
-        <span></span>
-        <div>
-          <div>{distance}</div>
-          <div>{travel}</div>
-        </div>
+        <article>
+          <h1 className={styles.name}>{name}</h1>
+          <p>{description}</p>
+          <span></span>
+          <div className={styles.stat}>
+            <div>{distance}</div>
+            <div>{travel}</div>
+          </div>
+        </article>
       </>
     );
   }
