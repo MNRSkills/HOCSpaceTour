@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import CrewDestTechComponent from "../withDataSpread";
-import bgHome from "../../assets/home/background-home-desktop.jpg";
 import styles from "../../styles/Home.module.css";
 
 const Home = (props) => {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./Nav";
-import Logo from "../../assets/shared/logo.svg";
+import Logo from "../../fixImages/shared/logo.svg";
 import styles from "../../styles/Layout.module.css";
 
 const Layout = (props) => {

@@ -1,7 +1,7 @@
 /* THIS PAGE NEEDS TO HAVE ZINDEX TO SIT BEHIND THE NAV AND COVER THE HOLE PAGE */
 
 .destinationsPage {
-  background: url("../assets/destination/background-destination-desktop.jpg");
+  background: url("../../public/assets/destination/background-destination-desktop.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

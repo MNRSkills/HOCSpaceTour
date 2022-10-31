@@ -6,23 +6,25 @@ export const CrewMember = (props) => {
   if (props.crewName == name) {
     return (
       <>
-        <header>
-          <span aria-hidden="true">02</span>
-          <h4> Meet your crew</h4>
-        </header>
-        <h2 className={styles.role}>{role}</h2>
-        <h1 className={styles.name}>{name}</h1>
-        <p className={styles.bio}>{bio}</p>
-        <img src={images.png} alt="" />
+        <article>
+          <header>
+            <span aria-hidden="true">02</span>
+            <h4> Meet your crew</h4>
+          </header>
+          <h2 className={styles.role}>{role}</h2>
+          <h1 className={styles.name}>{name}</h1>
+          <p className={styles.bio}>{bio}</p>
+        </article>
+        <img src={images.png} alt="profile pic" />
       </>
     );
   }
 };
 
-export const MsgBuilder = (props) => {
-  console.log(props);
-  return <div>This is builder for msg</div>;
-};
+
+export const Techy = (props) => {
+
+}
 
 // export const sliderComp = (props) => {
 //     return (
