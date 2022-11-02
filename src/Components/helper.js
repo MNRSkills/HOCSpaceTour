@@ -21,10 +21,55 @@ export const CrewMember = (props) => {
   }
 };
 
+export const Tour = (props) => {
+  console.log(props);
+  const { name, images, description, distance, travel } = props.tour;
+  const { png, webp } = images;
+  if (props.destName == name) {
+    return (
+      <>
+        <header>travel with booking.com</header>
+        <img src={png} alt="" />
+        <article>
+          <h1 className={styles.name}>{name}</h1>
+          <p className={styles.bio}>{description}</p>
+          <span></span>
+          <div className={styles.stat}>
+            <div>{distance}</div>
+            <div>{travel}</div>
+          </div>
+        </article>
+      </>
+    );
+  }
+};
 
 export const Techy = (props) => {
-
-}
+  console.log("PROPS FOR TECH", props.tech);
+  const { name, images, description } = props.tech;
+  if (props.techName == name) {
+    return (
+      <>
+        <ul>
+          <li>
+            <span></span>
+          </li>
+          <li>
+            <span></span>
+          </li>
+          <li>
+            <span></span>
+          </li>
+        </ul>
+        <article>
+          <h1 className={styles.name}>{name}</h1>
+          <p className={styles.bio}>{description}</p>
+        </article>
+        <img src={images.portrait} alt="" />
+      </>
+    );
+  }
+};
 
 // export const sliderComp = (props) => {
 //     return (

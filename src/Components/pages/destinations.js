@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import CrewDestTechComponent from "../withDataSpread";
-import Tour from "../tour";
+import { Tour } from "../helper";
 import styles from "../../styles/Destinations.module.css";
 
 // THE START OF A COMPONENT
@@ -44,7 +44,7 @@ const Destinations = (props) => {
             />
           </li>
         </ul>
-        <div className={styles.destinationComp}>
+        <div className={styles.crewDp}>
           {props.data.destinations.map((tour, index) => {
             return (
               <Tour

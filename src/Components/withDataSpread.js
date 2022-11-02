@@ -11,7 +11,8 @@ const CrewDestTechComponent = (OriginalComponent) => {
         destName: "Moon",
         crew: data.crew,
         crewName: "Douglas Hurley",
-        tech:data.technology
+        tech: data.technology,
+        techName: "Launch vehicle"
       };
 
       this.handleChange = this.handleChange.bind(this);
@@ -47,6 +48,7 @@ const CrewDestTechComponent = (OriginalComponent) => {
             crew={this.state.crew}
             crewName={this.state.crewName}
             tech={this.state.tech}
+            techName={this.state.techName}
           />
         </div>
       );

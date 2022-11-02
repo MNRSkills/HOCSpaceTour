@@ -9,10 +9,15 @@ const Tech = (props) => {
 
   const mapperT = () => {
     return props.tech.map((techy, index) => {
-      return <Techy tech={techy} key={index} />;
+        return <Techy tech={techy} key={index} techName={props.techName} />;
     });
   };
-  return <div className={styles.tech}>{mapperT()}</div>;
+  return (
+    <div className={styles.tech}>
+
+      <div className={styles.crewDp}>{mapperT()}</div>
+    </div>
+  );
 };
 
 export default CrewDestTechComponent(Tech);
